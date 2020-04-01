@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap&subset=cyrillic');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6,p,a {
+    padding: 0;
+    margin: 0;
+}
+.bg-image {
+	width: 100%;
+	min-height: 500px;
+	background: url(../photos/top-darken.png) center center / cover;
+}
+.wrapper {
+	max-width: 1190px;
+	margin: 0 auto;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 1;
+}
+.popup-menu {
+	position: fixed;
+    left: 0;
+    right: 0;
+    top: -250px;
+    background-color: #ffc155dd;
+    width: 100%;
+	min-height: 250px;
+	z-index: 2;
+}
+.navi a {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+.mobile-menu-button {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+	z-index: 3;
+}
+
+.mobile-menu-line {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.mobile-menu-line:nth-child(1) {
+    top: 0;
+}
+
+.mobile-menu-line:nth-child(2) {
+    top: 50%;
+    margin-top: -2px;
+}
+
+.mobile-menu-line:nth-child(3) {
+    bottom: 0;
+}
+
+.mobile-menu-visible .mobile-menu-line:nth-child(1) {
+    transform-origin: 100% 0;
+    transform: rotate(-45deg);
+    top: 0;
+    right: 6px;
+}
+
+.mobile-menu-visible .mobile-menu-line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-visible .mobile-menu-line:nth-child(3) {
+    transform-origin: 100% 4px;
+    transform: rotate(45deg);
+    bottom: 0;
+    right: 6px;
+}
+.logo {
+    display: flex;
+  }
+.logoimg {
+	display: inline;
+	background: url(../icons/spasskaya-tower.png) center center / contain no-repeat;
+	padding: 30px;
+	margin-right: 15px;
+}
+.logotext {
+	display: inline;
+	background: url(../icons/MyMoscow.png) center center / contain no-repeat;
+	padding: 25px 75px;
+}
+nav a{
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 30px;
+	font-weight: 600;
+    font-size: 14.5px;
+    color: white;
+}
+.image-content {
+	text-align: center;
+	color: white;
+	padding-top: 127px;
+}
+.image-content h1 {
+	font-size: 50px; 
+}
+.image-content p {
+	font-size: 20px; 
+}
+#image {
+	font-size: 28px; 
+}
+
+.title {
+	text-align: center;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #709dca;
+	font-weight: 700;
+	padding: 30px 0;
+}
+
+.MoscowCity {
+	width: 100%;
+	min-height: 425px;
+	display: flex;
+}
+.MoscowCity-item {
+	width: 50%;
+	min-height: 425px;
+	background-color: #ffc155;
+	color: white;
+}
+.MoscowCity-item .photo{
+    background: url(../photos/Moscow-City.png) center center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 425px;
+}
+.text {
+	max-width: 630px;
+	min-height: 415px;
+	padding: 30px 15px 20px 5%;
+	box-sizing: border-box;
+}
+.text h3 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.text h4 {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.text p {
+	font-size: 13px;
+	line-height: 1.5em;
+	margin-bottom: 15px;
+}
+.button {
+	border: 1px solid rgb(203, 141, 33);
+	border-radius: 2px;
+	background-color: #e7ad48;
+	width: 140px;
+	height: 35px;
+	text-align: center;
+	line-height: 2.7em;
+	font-size: 13px;
+	cursor: pointer;
+}
+.Stalin {
+	width: 100%;
+	min-height: 415px;
+	display: flex;
+}
+.Stalin-item {
+	width: 50%;
+	min-height: 415px;
+	background-color: #ffc155;
+	color: white;
+}
+.Stalin-item .photo{
+    background: url(../photos/Stalin.png) center center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 415px;
+}
+.Stalin-item .text {
+	max-width: 750px;
+	text-align: right;
+	min-height: 415px;
+	padding: 30px 5% 20px 40px;
+	box-sizing: border-box;
+}
+.position {
+	text-align: right;
+}
+.position .button {
+	display: inline-block;
+}
+.Master {
+	width: 100%;
+	min-height: 425px;
+	display: flex;
+}
+.Master-item {
+	width: 50%;
+	min-height: 425px;
+	background-color: #ffc155;
+	color: white;
+}
+.Master .photo{
+    background: url(../photos/Master.png) center center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 425px;
+}
+.Master .text {
+	max-width: 630px;
+	min-height: 415px;
+	padding: 30px 15px 20px 5%;
+	box-sizing: border-box;
+}
+.Metro {
+	width: 100%;
+	min-height: 415px;
+	display: flex;
+	margin-bottom: 70px;
+}
+.Metro-item {
+	width: 50%;
+	min-height: 415px;
+	background-color: #ffc155;
+	color: white;
+}
+.Metro-item .photo{
+    background: url(../photos/Stalin.png) center center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 415px;
+}
+.Metro-item .text {
+	max-width: 750px;
+	text-align: right;
+	min-height: 415px;
+	padding: 30px 5% 20px 40px;
+	box-sizing: border-box;
+}
+footer {
+	width: 100%;
+	background-color: #273a43;
+}
+.footer-top{
+	display: flex;
+	min-height: 260px;
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+.subject {
+	color: white;
+	width: 33.3333%;
+	box-sizing: border-box;
+}
+.info p {
+	color: #c3c3c3;
+	line-height: 1.5em;
+	padding-right: 70px; 
+}
+.logofooter { 
+	height: 50px; 
+    display: flex;
+	margin-bottom: 8px;
+}
+.info .logofooterimg {
+	background: url(../icons/spasskaya-tower.png) center center / contain no-repeat;
+	padding: 22px;
+	margin-right: 15px;
+}
+.info .logofootertext {
+	background: url(../icons/MyMoscow.png) center center / contain no-repeat;
+	padding: 15px 60px;
+}
+.contacts {
+	padding: 0 40px;
+}
+.theme {
+	display: flex;
+	flex-direction: column;
+}
+.theme .icons {
+	width: 20px;
+	height: 20px;
+}
+.theme .icons1 {
+	background: url(../icons/placeholder.png) center center / contain no-repeat;
+}
+.theme .icons2 {
+	background: url(../icons/mail.png) center center / contain no-repeat;
+}
+.theme .icons3 {
+	background: url(../icons/telephone.png) center center / contain no-repeat;
+}
+.theme-content {
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.contacts h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.contacts p{
+	font-size: 13.5px;
+	margin-left: 15px;
+}
+.news {
+	padding: 0 40px;
+}
+.news h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.news p{
+	font-size: 13.5px;
+	color: #c4c4c4;
+	line-height: 1.8em;
+	margin-bottom: 15px;
+}
+.news span {
+	color: #71b6d5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 13.5px;
+}
+.footer-bottom {
+	width: 100%;
+	min-height: 80px;
+	background-color: #172227;
+}
+.bottom-content {
+	display: flex;
+	min-height: 80px;
+	align-items: center;
+}
+.topic {
+	width: 33.3333%;
+	box-sizing: border-box;
+}
+.copy {
+	font-size: 13.5px;
+	color: #c4c4c4;
+}
+.design {
+	text-align: center;
+	font-size: 13.5px;
+	color: #c4c4c4;
+}
+.bottom-content .icons {
+	padding: 10px 0px;
+	font-size: 0;
+	text-align: right;
+}
+.bottom-content .icon {
+	background: center / contain no-repeat;
+	padding: 17px;
+	margin-left: 7px;
+	background-color: white;
+}
+.bottom-content .icon1 { 
+	background-image: url(../social/vk.png);
+}
+.bottom-content .icon2 { 
+	background-image: url(../social/facebook.png);
+}
+.bottom-content .icon3 { 
+	background-image: url(../social/instagram.png);
+}
+@media (max-width: 950px) {
+    .footer-top {
+        flex-direction: column;
+    }
+	.subject {
+		width: 100%;
+	}
+	.info {
+		margin-left: 35px;
+		margin-bottom: 30px;
+	}
+	.contacts {
+		margin-bottom: 40px;
+	}
+}
+@media(min-width: 950px) {
+	.info{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1250px) {
+	.copy{
+        margin-left: 30px;
+    }
+	.logo{
+        margin-left: 0px;
+    }
+	.icons{
+        margin-right: 20px;
+    }
+	.nav{
+        margin-right: 0px;
+    }
+}
+@media (max-width: 1000px) {
+    .MoscowCity {
+        flex-direction: column;
+		min-height: 350px;
+    }
+	.MoscowCity-item {
+		width: 100%;
+		min-height: 350px;
+		
+	}
+	.text {
+		max-width: 100%;
+		min-height: 350px;
+		text-align: center;
+	}
+	.button {
+		display: inline-block;
+		text-align: center;
+	}
+	.Stalin {
+        flex-direction: column-reverse;
+		min-height: 320px;
+    }
+	.Stalin-item {
+		width: 100%;
+		min-height: 320px;
+	}
+	.Stalin-item .text {
+		max-width: 100%;
+		min-height: 320px;
+		text-align: center;
+	}
+	.position {
+		text-align: center;
+	}
+    .Master {
+        flex-direction: column;
+		min-height: 365px;
+    }
+	.Master-item {
+		width: 100%;
+		min-height: 365px;
+	}
+	.Master-item .text {
+		max-width: 100%;
+		min-height: 365px;
+		text-align: center;
+	}
+	.button {
+		display: inline-block;
+		text-align: center;
+	}
+	.Metro {
+        flex-direction: column-reverse;
+    }
+	.Metro-item {
+		width: 100%;
+	}
+	.Metro-item .text {
+		max-width: 100%;
+		text-align: center;
+	}
+	.position {
+		text-align: center;
+	}
+}
+@media (max-width: 810px) {
+    .header .nav {
+        display: none;
+    }
+    .mobile-menu-button {
+        display: block;
+		margin-right: 15px;
+    }
+}
+@media (min-width: 700px) {
+    .popup-menu {
+        display: none;
+    }
+}
+	

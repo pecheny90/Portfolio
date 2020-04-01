@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap&subset=cyrillic');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6,p,a {
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+	max-width: 1190px;
+	margin: 0 auto;
+}
+.wrapper-header {
+	max-width: 1190px;
+	margin: 0 auto;
+}
+.bg-image {
+	width: 100%;
+	min-height: 500px;
+	background: url(../photos/top.png) center center / cover;
+}
+.header {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1
+}
+.popup-menu {
+	position: fixed;
+    left: 0;
+    right: 0;
+    top: -250px;
+    background-color: #ffc155dd;
+    width: 100%;
+	min-height: 250px;
+	z-index: 2;
+}
+.navi a {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+.mobile-menu-button {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+	z-index: 3;
+}
+.mobile-menu-line {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: 0.5s;
+}
+.mobile-menu-line:nth-child(1) {
+    top: 0;
+}
+.mobile-menu-line:nth-child(2) {
+    top: 50%;
+    margin-top: -2px;
+}
+.mobile-menu-line:nth-child(3) {
+    bottom: 0;
+}
+.mobile-menu-visible .mobile-menu-line:nth-child(1) {
+    transform-origin: 100% 0;
+    transform: rotate(-45deg);
+    top: 0;
+    right: 6px;
+}
+.mobile-menu-visible .mobile-menu-line:nth-child(2) {
+    opacity: 0;
+}
+.mobile-menu-visible .mobile-menu-line:nth-child(3) {
+    transform-origin: 100% 4px;
+    transform: rotate(45deg);
+    bottom: 0;
+    right: 6px;
+}
+.logo {
+  display: flex;
+}
+.logoimg {
+    display: inline;
+	background: url(../icons/spasskaya-tower.png) center center / contain no-repeat;
+	padding: 30px;
+	margin-right: 15px;
+}
+.logotext {
+    display: inline;
+	background: url(../icons/MyMoscow.png) center center / contain no-repeat;
+	padding: 25px 75px;
+}
+nav a{
+	text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 14.5px;
+    color: white;
+}
+.image-content {
+	text-align: center;
+	color: white;
+	padding-top: 127px;
+}
+.image-content h1 {
+	font-size: 50px; 
+}
+.image-content p {
+	font-size: 20px; 
+}
+#image {
+	font-size: 28px; 
+}
+.contacts-info {
+	min-height: 250px;
+	padding: 60px 0 30px 0;
+	box-sizing: border-box;
+}
+#contact {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px; 
+	font-weight: 700;
+	color: #709dca;
+	margin-bottom: 35px;
+}
+.contacts-info p {
+	color: #062033;
+	font-size: 13px;
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
+.position {
+	display: flex;
+	justify-content: space-between;
+}
+.position .content {
+	display: flex;
+	justify-content: space-between;
+	max-width: 565px;
+	min-height: 120px;
+	background-color: #ffc155;
+}
+.item-left {
+	width: 40%;
+	min-height: 120px;
+}
+.item-right {
+	color: #062033;
+	width: 60%;
+	padding: 20px 25px 10px 5%;
+	box-sizing: border-box;
+}
+.itemphoto {
+	min-height: 120px;
+	background: url(../photos/photo1.png) center center / cover no-repeat;
+	border-right: 6px solid #709dca;
+	width: 100%;
+	height: 100%;
+}
+.itemphoto.other {
+	background: url(../photos/photo2.png) center center / cover no-repeat;
+}
+.item-right h4 {
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+.item-right p {
+	margin-bottom: 35px;
+}
+.item-right span{
+	color: #0066ff;
+}
+#span {
+	margin-bottom: 5px;
+}
+.write {
+	display: flex;
+	justify-content: space-between;
+	min-height: 360px;
+	padding-top: 45px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	box-sizing: border-box;
+}
+.content {
+	width: 565px;
+	min-height: 360px;
+}
+.themes {
+	display: flex;	
+	margin-bottom: 20px;
+	color: #062033;
+	font-size: 15px;
+}
+.icona {
+	width: 37px;
+    height: 37px;
+	margin-right: 15px;
+}
+.icon1 {
+	background: url(../icons/placeholder.png) center center / cover no-repeat;
+}
+.icon2 {
+	background: url(../icons/mail.png) center center / cover no-repeat;
+}
+.icon3 {
+	background: url(../icons/telephone.png) center center / cover no-repeat;
+}
+.address p {
+	margin-bottom: 2px;
+}
+.content-right p {
+	width: 565px;
+	font-size: 15px;
+	color: #062033;
+}
+.message {
+	display: flex;
+	flex-direction: column;
+}
+[type="text"],
+[type="email"],
+[type="tel"],
+[type="submit"],
+textarea {
+    border: 3px solid #ffc155;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    outline: none;
+	font-size: 16px;	
+}
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+[type="submit"] {
+    background-color: #062033;
+    color: white;
+	font-size: 18px;
+	border: none;
+	margin-bottom: 30px;
+}
+.map {
+	min-height: 360px;
+	border-top: 5px solid #ffc155;
+}
+footer {
+	width: 100%;
+	background-color: #273a43;
+}
+.footer-top{
+	display: flex;
+	min-height: 260px;
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+.subject {
+	color: white;
+	width: 33.3333%;
+	box-sizing: border-box;
+}
+.info p {
+	color: #c3c3c3;
+	line-height: 1.5em;
+	padding-right: 70px; 
+}
+.logofooter { 
+	height: 50px; 
+    display: flex;
+	margin-bottom: 8px;
+}
+.info .logofooterimg {
+	background: url(../icons/spasskaya-tower.png) center center / contain no-repeat;
+	padding: 22px;
+	margin-right: 15px;
+}
+.info .logofootertext {
+	background: url(../icons/MyMoscow.png) center center / contain no-repeat;
+	padding: 15px 60px;
+}
+.contacts {
+	padding: 0 40px;
+}
+.theme {
+	display: flex;
+	flex-direction: column;
+}
+.theme .icons {
+	width: 20px;
+	height: 20px;
+}
+.theme .icons1 {
+	background: url(../icons/placeholder.png) center center / contain no-repeat;
+}
+.theme .icons2 {
+	background: url(../icons/mail.png) center center / contain no-repeat;
+}
+.theme .icons3 {
+	background: url(../icons/telephone.png) center center / contain no-repeat;
+}
+.theme-content {
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.contacts h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.contacts p{
+	font-size: 13.5px;
+	margin-left: 15px;
+}
+.news {
+	padding: 0 40px;
+}
+.news h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.news p{
+	font-size: 13.5px;
+	color: #c4c4c4;
+	line-height: 1.8em;
+	margin-bottom: 15px;
+}
+.news span {
+	color: #71b6d5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 13.5px;
+}
+.footer-bottom {
+	width: 100%;
+	min-height: 80px;
+	background-color: #172227;
+}
+.bottom-content {
+	display: flex;
+	min-height: 80px;
+	align-items: center;
+}
+.topic {
+	width: 33.3333%;
+	box-sizing: border-box;
+}
+.copy {
+	font-size: 13.5px;
+	color: #c4c4c4;
+}
+.design {
+	text-align: center;
+	font-size: 13.5px;
+	color: #c4c4c4;
+}
+.bottom-content .icons {
+	padding: 10px 0px;
+	font-size: 0;
+	text-align: right;
+}
+.bottom-content .icon {
+	background: center / contain no-repeat;
+	padding: 17px;
+	margin-left: 7px;
+	background-color: white;
+}
+.bottom-content .icon1 { 
+	background-image: url(../social/vk.png);
+}
+.bottom-content .icon2 { 
+	background-image: url(../social/facebook.png);
+}
+.bottom-content .icon3 { 
+	background-image: url(../social/instagram.png);
+}
+@media (max-width: 950px) {
+    .footer-top {
+        flex-direction: column;
+    }
+	.subject {
+		width: 100%;
+	}
+	.info {
+		margin-left: 35px;
+		margin-bottom: 30px;
+	}
+	.contacts {
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 780px) {
+	.write {
+        flex-direction: column;
+    }
+	.content {
+		width: 100%;
+	}
+	.content-right {
+		padding: 0 2vw;
+	}
+	.content-left {
+		padding: 0 2vw;
+	}
+}
+@media (max-width: 1350px) {
+	.content-left {
+		padding: 0 2vw;
+	}
+}
+@media (min-width: 780px ) and (max-width: 950px) {
+	.content-right {
+		width: 500px ;
+	}
+} 
+@media (min-width: 950px){
+	.info {
+		margin-left: 15px;
+	}
+}
+@media (max-width: 1250px){
+	.copy {
+		margin-left: 35px;
+	}
+	.logo {
+		margin-left: 0px;
+	}
+	.icons {
+		margin-right: 15px;
+	}
+	.nav {
+		margin-right: 0px;
+	}
+}
+@media (max-width: 1350px) {
+	.content-right {
+		padding: 0 2vw;
+	}
+	.contacts-info {
+		padding: 40px 15px 20px 15px;
+		box-sizing: border-box;
+	}
+}
+@media (max-width: 1350px) {
+	.position .content {
+		width: 550px;
+		margin-left: 15px;
+	}
+}
+@media (max-width: 900px) {
+	.position {
+		flex-direction: column;
+		align-items: center;
+	}
+	.position .content {
+		margin-bottom: 25px;
+	}
+}
+@media (max-width: 600px) {
+	.position .content {
+		width: 420px;
+		min-height: 120px;
+	}
+	.content {
+		flex-direction: column;
+	}
+	.item-left {
+		width: 100%;
+	}
+	.itemphoto {
+		min-height: 230px;
+		border: none;
+	}
+}
+@media (max-width: 1350px) {
+	.content {
+		margin-right: 10px;
+	}
+} 
+@media (max-width: 810px) {
+    .header .nav {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+		margin-right: 15px;
+    }
+}
+@media (min-width: 700px) {
+    .popup-menu {
+        display: none;
+    }
+}
+	
