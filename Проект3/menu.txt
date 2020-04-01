@@ -1,0 +1,39 @@
+Таблица 'menu'
+
+id name     link pos typeId categoryId
+id Женщинам link pos typeId categoryId
+id Мужчинам link pos typeId categoryId
+id Детям    link pos typeId categoryId
+id Новинки  link pos typeId categoryId
+
+enum - тип данных в MySQL, в котором есть набор заранее установленных значений
+('header', 'footerLeft', 'footerRight')
+
+Таблица 'menu_types':
+
+id name alias
+
+
+Таблица 'sizes':
+
+id categoryId name pos
+
+
+Таблица 'categories':
+
+id (parentId) sectionId name pos
+
+
+Таблица 'sections' (разделы сайта):
+
+id name pos
+
+
+Таблица 'items':
+
+id name image classifier descrition price createdAt categoryId
+
+
+Таблица 'items_sizes':
+
+itemId sizeId
